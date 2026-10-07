@@ -10,6 +10,8 @@
 
 ![Education & Journey](./assets/journey.svg?v=1)
 
+![Experience](./assets/experience.svg?v=1)
+
 ![Featured Builds](./assets/projects.svg?v=1)
 
 [DeepSea](https://github.com/tiwariraman884/DeepSee) · [GreenStep India](https://github.com/tiwariraman884/promptwar) · [IBM Z Fraud Detection](https://github.com/tiwariraman884/Datathon) · [MediTech](https://github.com/tiwariraman884/MediTech) · [Cinematic 3D Education](https://github.com/tiwariraman884/cinematic-3d-gamified-education) · [Food Safety App](https://github.com/tiwariraman884/food-safety-app)
