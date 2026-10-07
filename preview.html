@@ -12,131 +12,64 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
-  .page { max-width: 1100px; margin: 0 auto; padding: 48px 20px 96px; }
-  header.intro { padding: 8px 0 32px; border-bottom: 1px solid #16203a; margin-bottom: 40px; }
-  header.intro h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -.6px; }
-  header.intro p { margin: 0; color: var(--mut); font-size: 15px; }
-  header.intro code {
-    font-family: ui-monospace, "JetBrains Mono", Consolas, monospace;
-    font-size: 13px; color: #9aabcd;
-  }
-  section { margin: 0 0 40px; }
+  .page { max-width: 1100px; margin: 0 auto; padding: 48px 20px 32px; }
+  /* the five premium SVG sections read as one continuous portfolio: tighter
+     rhythm between panels than between the plain-content blocks */
+  section { margin: 0 0 28px; }
+  section.asset-section { margin: 0 0 16px; }
   section > h2 {
     font-size: 12px; letter-spacing: 3px; text-transform: uppercase;
-    color: #5b6b8f; margin: 0 0 12px; font-weight: 700;
+    color: #5b6b8f; margin: 0 0 10px; font-weight: 700;
   }
   img.asset {
     display: block; width: 100%; height: auto;
     border-radius: 20px; background: transparent;
   }
-  .note {
-    font-size: 13px; color: var(--mut); margin-top: 10px; line-height: 1.6;
-  }
-  .note a { color: #6ea2ff; }
-  hr.sep { border: 0; border-top: 1px solid #16203a; margin: 48px 0 40px; }
-  .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0 0; padding: 0; list-style: none; }
-  .links a {
-    display: inline-block; padding: 9px 16px; border-radius: 999px;
-    border: 1px solid #1d2942; color: #cdd9f5; text-decoration: none;
-    font-size: 13.5px;
-  }
-  .links a:hover { border-color: #247bff; }
-  h3.proj { font-size: 17px; margin: 26px 0 6px; }
-  h3.proj a { color: #eef3ff; text-decoration: none; }
-  h3.proj a:hover { color: #6ea2ff; }
-  .proj p { margin: 0 0 6px; color: #9aabcd; font-size: 14.5px; line-height: 1.65; }
-  .proj .url {
-    font-family: ui-monospace, "JetBrains Mono", Consolas, monospace;
-    font-size: 12.5px; color: #5b6b8f; text-decoration: none;
-  }
-  footer.preview-note {
-    margin-top: 56px; padding-top: 22px; border-top: 1px solid #16203a;
-    color: #5b6b8f; font-size: 12.5px; line-height: 1.7;
-  }
+  /* clickable fallback rows under the Featured Builds and Connect panels: one
+     tight inline row each, never a second list */
+  .social { margin: 12px 0 0; font-size: 14.5px; color: #5b6b8f; }
+  .social a { color: #cdd9f5; text-decoration: none; border-bottom: 1px solid #24314f; padding-bottom: 1px; }
+  .social a:hover { color: #6ea2ff; border-bottom-color: #247bff; }
+  .social .dot { color: #33415f; margin: 0 10px; }
 </style>
 </head>
 <body>
 <div class="page">
 
-  <header class="intro">
-    <h1>Raman Kumar Tiwari</h1>
-    <p>
-      B.Tech CSE Student · AI/ML &amp; Full-Stack Developer ·
-      <code>github.com/tiwariraman884</code>
-    </p>
-  </header>
-
-  <section>
-    <h2>Intro</h2>
-    <img class="asset" src="./assets/hero.svg?v=1" alt="Intro" width="1280" height="520">
+  <section class="asset-section">
+    <h2>Hero</h2>
+    <img class="asset" src="./assets/hero.svg?v=1" alt="Hero" width="1280" height="560">
   </section>
 
-  <section>
+  <section class="asset-section">
     <h2>About</h2>
     <img class="asset" src="./assets/about-life.svg?v=1" alt="About" width="1280" height="806">
   </section>
 
-  <section>
+  <section class="asset-section">
     <h2>Stack</h2>
     <img class="asset" src="./assets/stack.svg?v=1" alt="Stack" width="1280" height="860">
   </section>
 
-  <section>
-    <h2>ID</h2>
-    <img class="asset" src="./assets/id-dashboard.svg?v=1" alt="ID" width="1280" height="860">
+  <section class="asset-section">
+    <h2>Developer ID</h2>
+    <img class="asset" src="./assets/id-dashboard.svg?v=1" alt="Developer ID" width="1280" height="860">
   </section>
 
-  <section>
-    <h2>Connect</h2>
-    <img class="asset" src="./assets/connect.svg?v=1" alt="Connect" width="1280" height="800">
-    <p class="note">
-      Links inside an SVG image are not reliably clickable on GitHub, so the
-      real links are listed below and in <code>README.md</code>.
+  <section class="asset-section">
+    <h2>Featured Builds</h2>
+    <img class="asset" src="./assets/projects.svg?v=1" alt="Featured Builds" width="1280" height="560">
+    <p class="social">
+      <a href="https://github.com/tiwariraman884/DeepSee">DeepSea</a><span class="dot">·</span><a href="https://github.com/tiwariraman884/promptwar">GreenStep India</a><span class="dot">·</span><a href="https://github.com/tiwariraman884/Datathon">IBM Z Fraud Detection</a>
     </p>
-    <ul class="links">
-      <li><a href="https://github.com/tiwariraman884">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/raman-kumar-tiwari-698064370">LinkedIn</a></li>
-      <li><a href="https://www.instagram.com/rittesh3321">Instagram</a></li>
-      <li><a href="https://linktr.ee/tiwariraman884">Linktree</a></li>
-    </ul>
   </section>
 
-  <hr class="sep">
-
-  <section>
-    <h2>Featured Projects</h2>
-
-    <div class="proj">
-      <h3 class="proj"><a href="https://github.com/tiwariraman884/DeepSee">DeepSea</a></h3>
-      <p>An AI-driven ocean monitoring and inspection platform designed to detect
-         anomalies, support pollution and biodiversity monitoring, and coordinate
-         intelligent drone-based inspection workflows.</p>
-      <a class="url" href="https://github.com/tiwariraman884/DeepSee">github.com/tiwariraman884/DeepSee</a>
-    </div>
-
-    <div class="proj">
-      <h3 class="proj"><a href="https://github.com/tiwariraman884/promptwar">GreenStep India</a></h3>
-      <p>An AI-powered sustainability platform combining carbon tracking, an AI Eco
-         Coach, scanning, dashboards and sustainability-focused tools to help users
-         make more informed environmental choices.</p>
-      <a class="url" href="https://github.com/tiwariraman884/promptwar">github.com/tiwariraman884/promptwar</a>
-    </div>
-
-    <div class="proj">
-      <h3 class="proj"><a href="https://github.com/tiwariraman884/Datathon">IBM Z Fraud Detection</a></h3>
-      <p>A machine-learning fraud detection system built for highly imbalanced
-         transaction data, with a trained classification model and FastAPI-based
-         prediction API.</p>
-      <a class="url" href="https://github.com/tiwariraman884/Datathon">github.com/tiwariraman884/Datathon</a>
-    </div>
+  <section class="asset-section">
+    <img class="asset" src="./assets/connect.svg?v=1" alt="Connect" width="1280" height="800">
+    <p class="social">
+      <a href="https://github.com/tiwariraman884">GitHub</a><span class="dot">·</span><a href="https://www.linkedin.com/in/raman-kumar-tiwari-698064370">LinkedIn</a><span class="dot">·</span><a href="https://www.instagram.com/rittesh3321">Instagram</a><span class="dot">·</span><a href="https://linktr.ee/tiwariraman884">Linktree</a>
+    </p>
   </section>
-
-  <footer class="preview-note">
-    Preview of the five profile SVG sections, in the same order as
-    <code>README.md</code>. Open this file directly from disk — no web server
-    required. Fonts (Inter, JetBrains Mono) are embedded inside each SVG as
-    base64 WOFF2; see <a href="./LICENSE-fonts.md">LICENSE-fonts.md</a>.
-  </footer>
 
 </div>
 </body>
