@@ -6,6 +6,8 @@
 
 ![ID](./assets/id-dashboard.svg?v=1)
 
+![Profile Snapshot](./assets/profile-snapshot.svg?v=1)
+
 ![Featured Builds](./assets/projects.svg?v=1)
 
 [DeepSea](https://github.com/tiwariraman884/DeepSee) · [GreenStep India](https://github.com/tiwariraman884/promptwar) · [IBM Z Fraud Detection](https://github.com/tiwariraman884/Datathon)
